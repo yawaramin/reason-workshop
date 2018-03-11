@@ -19,6 +19,7 @@ You will need at least:
 After installing the above, run the following:
 
     npm install
+    npm link bs-platform
     bsb -make-world
     parcel index.html
 
