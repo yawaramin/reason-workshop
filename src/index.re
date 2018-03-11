@@ -21,7 +21,10 @@ module ReasonDemo = {
   let initialState() = None;
 
   let reducer(action, _) = switch (action) {
-  | Alert(string) => React.SideEffects((_) => alert(string))
+  | Alert(string) => React.SideEffects((_) => {
+      alert(string);
+      React.Router.push("/index")
+    })
   | GotoId(int) => React.Update(Some(int))
   | GotoIndex => React.Update(None)
   };
