@@ -9,7 +9,7 @@
     "OCaml"
   ],
   "scripts": {
-    "preinstall": "(bsb -v || npm install -g bs-platform) && (parcel --version || npm install -g parcel-bundler)"
+    "postinstall": "npm link bs-platform"
   },
   "author": "Yawar Amin",
   "license": "MIT",
